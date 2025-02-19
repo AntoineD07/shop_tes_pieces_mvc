@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shop tes piéces</title>
-    <!-- <link rel="stylesheet" href="./assets/stylenavbarf.css"> -->
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
 
 
 </head>
@@ -34,7 +33,7 @@
             <div class="vente">
                 <img src="/assets/img/amortiseur/D2.jpg" alt="amortiseur">
                 <p>Combinés Filetés D2 Street pour BMW Série 3 E30</p>
-                <button> <a href="./description.html">description</a> </button>
+                <button> <a href="/description">description</a> </button>
 
 
 
@@ -42,21 +41,21 @@
             <div class="vente">
                 <img src="/assets/img/amortiseur/D2.jpg" alt="amortiseur">
                 <p>Combinés Filetés D2 Street pour BMW Série 3 E30</p>
-                <button> <a href="./description.html">description</a> </button>
+                <button> <a href="/description">description</a> </button>
 
             </div>
 
             <div class="vente">
                 <img src="/assets/img/amortiseur/D2.jpg" alt="amortiseur">
                 <p>Combinés Filetés D2 Street pour BMW Série 3 E30</p>
-                <button> <a href="./description.html">description</a> </button>
+                <button> <a href="/description">description</a> </button>
 
             </div>
 
             <div class="vente">
                 <img src="/assets/img/jante/BBS rs.jpg" alt="jante">
                 <p>Jante BBS Super RS</p>
-                <button> <a href="./description.html">description</a> </button>
+                <button> <a href="/description">description</a> </button>
 
             </div>
         </section>

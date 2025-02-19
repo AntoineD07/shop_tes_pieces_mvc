@@ -21,7 +21,7 @@
                 <img src="https://placehold.co/200" alt="">
                 <h4>produit 1</h4>
                 <p class="prix">1000£</p>
-                <a href="./description.html">
+                <a href="/description">
                     <button class="description">description</button>
                 </a>
                 <a  href="#">
@@ -33,7 +33,7 @@
                 <img src="https://placehold.co/200" alt="">
                 <h4>produit 1</h4>
                 <p class="prix">1500£</p>
-                <a href="./description.html">
+                <a href="/description">
                     <button class="description">description</button>
                 </a>
                 <a href="">
@@ -45,7 +45,7 @@
                 <img src="https://placehold.co/200" alt="">
                 <h4>produit 1</h4>
                 <p class="prix">1000£</p>
-                <a href="./description.html">
+                <a href="/description">
                     <button class="description">description</button>
                 </a>
                 <a href="">
@@ -57,7 +57,7 @@
                 <img src="https://placehold.co/200" alt="">
                 <h4>produit 1</h4>
                 <p class="prix">1500£</p>
-                <a href="./description.html">
+                <a href="/description">
                     <button class="description">description</button>
                 </a>
                 <a href="">

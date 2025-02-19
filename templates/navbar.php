@@ -19,10 +19,10 @@
             </li>
 
             <li>
-                <a href="./index_connexion.html">connexion</a>
+                <a href="/connexion">connexion</a>
             </li>
             <li>
-                <a href="./index_inscription.html">inscription</a>
+                <a href="/inscription">inscription</a>
             </li>
         </ul>
         <div class="burger">
@@ -39,7 +39,7 @@
 
        
         <div class="panier"> 
-            <a href="./panier.html">
+            <a href="/panier">
             <p>&#128722</p>
         </a>
         </div>
