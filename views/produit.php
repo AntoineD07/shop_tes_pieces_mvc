@@ -5,49 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/stylenavbarf.css">
+ 
     <link rel="stylesheet" href="./assets/css/produit.css">
 </head>
 
 <body>
-    <nav>
-
-        <ul class="nav-links">
-            <li>
-                <a href="./index.html">acceuil</a>
-            </li>
-            <li>
-                <a href="./mon_compte.html">mon compte</a>
-            </li>
-
-            <li>
-                <a href="./index_connexion.html">connexion</a>
-            </li>
-            <li>
-                <a href="./index_inscription.html">inscription</a>
-            </li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-
-        </div>
-        <a href="./index.html">
-            <div class="logo">
-                <img src="./assets/img/logo/shop_tes_piéces_1_-removebg-preview(1).png" alt="logo">
-            </div>
-        </a>
-        <div class="panier">
-            <p>&#128722</p>
-        </div>
-        <ul class="menu-panier">
-            <li>
-                <a href="./panier.html">Panier</a>
-            </li>
-        </ul>
-
-    </nav>
+   
 
 
     <main>

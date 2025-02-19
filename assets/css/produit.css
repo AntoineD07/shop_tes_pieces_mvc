@@ -17,6 +17,9 @@ main{
     display: flex;
     flex-direction: column;
 }
+a{
+    text-decoration: none;
+}
 h2{
  
     box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.5);

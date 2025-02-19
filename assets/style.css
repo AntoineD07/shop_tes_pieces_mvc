@@ -34,115 +34,6 @@ body {
 
 }
 
-/* ---------------head nav----------------- */
-nav {
-  display: flex;
-  justify-content: space-between;
-
-  align-items: center;
-  min-height: 10vh;
-  background-color: #7b39eb;
-
-}
-
-nav div {
-  margin: 3vh;
-}
-
-.logo img {
-  display: flex;
-  height: 8vh;
-}
-
-/* ------------------menu acceuil----------------------- */
-.nav-links li {
-  list-style: none;
-  opacity: 0;
-}
-
-.nav-links a {
-  color: #febc0c;
-  text-decoration: none;
-}
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  margin: 5px;
-  background-color: #febc0c;
-  transition: all 0.3s ease;
-}
-
-.nav-links {
-  z-index: 1;
-  justify-content: space-around;
-  position: absolute;
-  border-right: 1px solid #7b39eb;
-  border-bottom: 1px solid #7b39eb;
-  border-bottom-right-radius: 10px;
-  left: 40%;
-  height: 50vh;
-  top: 14vh;
-  background: #292d32;
-  opacity: 0.9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 40%;
-  transform: translateX(-200%);
-  transition: transform 0.5s ease-in;
-
-}
-
-.burger {
-  display: block;
-  cursor: pointer;
-}
-
-.nav-active {
-  transform: translateX(-100%);
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-
-}
-
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-
-}
-
-.toggle .line2 {
-  opacity: 0;
-}
-
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-
-
-a{
-  text-decoration: none;
-}
-.panier p {
-  font-size: 25px;
-}
-
-.panier {
-
-  margin: 10px;
-  display: block;
-  cursor: pointer;
-}
 
 
 
@@ -154,6 +45,7 @@ a{
   width: 100%;
   height: auto;
   display: flex;
+  
 }
 
 .text-offre {
@@ -171,7 +63,7 @@ a{
 
 @keyframes scrollText {
   0% {
-    transform: translateX(220%);
+    transform: translateX(350%);
     /* Commence hors écran à droite */
   }
 
@@ -330,69 +222,16 @@ footer {
 
 
 @media screen and (min-width: 768px) {
-  body {
-    font-size: larger;
-    overflow-x: hidden;
-  }
 
-  nav {
-    display: flex;
-    justify-content: space-between;
-
-    align-items: center;
-    min-height: 20vh;
-    background-color: #7b39eb;
-
-  }
-
-  nav div {
-    margin: 3vh;
-  }
-
-  .logo img {
-    display: flex;
-    height: 70px;
-  }
-
-  /*-------------menu accueil---------------------------  */
-  .burger div {
-    width: 35px;
-    height: 5px;
-    margin: 4px;
-
-  }
-
-  .nav-links {
-    top: 20vh;
-    width: 30%;
-    left: 30%;
-  }
-
-  .toggle .line1 {
-    transform: rotate(-45deg) translate(-7px, 6px);
-
-  }
-
-  .toggle .line3 {
-    transform: rotate(45deg) translate(-7px, -6px);
-  }
-
-  /* --------------------menu panier----------------------- */
-
-
-  .panier p {
-    font-size: 40px;
-    margin-right: 2rem;
-  }
 
   /* -----------------main---------------------------------- */
   .img-offre {
-    background-color: #f1f1f1;
+    background-color: #b6b6b6;
   }
 
   .img-offre img {
-    border: 1px solid #292d32;
-    width: 80%;
+    /* border: 1px solid #292d32; */
+    /* width: 80%; */
     display: flex;
     margin: auto;
   }

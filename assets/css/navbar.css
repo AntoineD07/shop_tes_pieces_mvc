@@ -26,7 +26,7 @@ nav {
   justify-content:space-between ;
 
   align-items: center;
-  min-height: 10vh;
+  min-height: 8rem;
   background-color: #7b39eb;
 
 }
@@ -37,7 +37,7 @@ nav div {
 
 .logo img {
   display: flex;
-  height: 8vh;
+  height: 4REM;
 }
 /* ------------------menu acceuil----------------------- */
 .nav-links li {
@@ -66,7 +66,7 @@ nav div {
   border-bottom-right-radius: 10px;
   left: 40%;
   height: 50vh;
-  top: 14vh;
+  top: 8rem;
   background: #292d32;
   opacity: 0.9;
   display: flex;
@@ -113,62 +113,22 @@ nav div {
 }
 
 /* --------------------menu panier----------------------- */
-.menu-panier li {
-  opacity: 0;
-  list-style: none;
-  margin: 2rem;
 
-}
 
-.menu-panier a {
-  color: #febc0c;
-  text-decoration: none;
-}
-
-.menu-panier {
-  
-  z-index: 1;
-  position: absolute;
-  border-left: 1px solid #7b39eb;
-  border-bottom: 1px solid #7b39eb;
-  border-bottom-left-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  right: 0%;
-  height: 50vh;
-  top: 14vh;
-  background: #292d32;
-  opacity: 0.9;
-  align-items: center;
-  width: 40%;
-  transform: translateX(100%);
-  transition: transform 0.5s ease-in;
- 
-}
 .panier p {
   font-size: 25px;
 }
+.panier a{
+  text-decoration: none;
+}
 .panier{
- 
+  text-decoration: none;
   margin: 10px;
   display: block;
   cursor: pointer;
 }
-/* anime */
-.menu-active{
-  transform: translateX(0%);
-}
-@keyframes menuFade {
-  from{
-      opacity: 0;
-      transform: translateX(50px);
-  }
-  to{
-      opacity: 1;
-      transform: translateX(0px);
-  }
-  
-}
+
+
 
 
 footer {
@@ -200,24 +160,13 @@ footer {
     font-size: larger;
   }
 
-  nav {
-    display: flex;
-    justify-content:space-between ;
-  
-    align-items: center;
-    height: 20vh;
-    background-color: #7b39eb;
-  
-  }
+ */
   
   nav div {
     margin: 6vh;
   }
   
-  .logo img {
-    display: flex;
-    height: 14vh;
-  }
+
 
    /*-------------menu accueil---------------------------  */
    .burger div {
@@ -227,9 +176,9 @@ footer {
     
   }
   .nav-links {
-    top: 20vh;
-    width: 30%;
-    left: 30%;
+    top: 8REM;
+    width: 40%;
+    left: 40%;
     }
 
     .toggle .line1 {
@@ -240,21 +189,9 @@ footer {
       transform: rotate(45deg) translate(-7px, -6px);
     }
 
-    /* --------------------menu panier----------------------- */
-    .menu-panier {
-      top: 20vh;
-      width: 30%;
+    /* --------------------panier----------------------- */
+    .panier p{
+      font-size: 2REM;
+
     }
-    .panier p {
-      font-size: 40px;
-      margin-right: 2rem;
-    }
-   
-    @keyframes scrollText {
-      0% {
-        transform: translateX(350%); /* Commence hors écran à droite */
-      }
-      100% {
-        transform: translateX(-200%); /* Finit complètement à gauche */
-      }
-    }}
+  }
