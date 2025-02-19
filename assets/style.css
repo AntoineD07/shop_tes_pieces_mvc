@@ -1,0 +1,442 @@
+@font-face {
+  font-family: Copperplate-Gothic;
+  src: url('./font/Copperplate-Gothic-Std-30-BC.ttf');
+}
+
+* {
+  font-family: Copperplate-Gothic;
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* width: 100%; */
+  overflow-x: hidden;
+
+
+}
+
+body {
+  --s: 30px;
+  /* control the size */
+
+  --c: #0000, #292d32 0.5deg 119.5deg, #0000 120deg;
+  --g1: conic-gradient(from 60deg at 56.25% calc(425% / 6), var(--c));
+  --g2: conic-gradient(from 180deg at 43.75% calc(425% / 6), var(--c));
+  --g3: conic-gradient(from -60deg at 50% calc(175% / 12), var(--c));
+  background: var(--g1), var(--g1) var(--s) calc(1.73 * var(--s)), var(--g2),
+    var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0,
+    var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
+  background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
+
+
+  min-width: 360px;
+  text-shadow: 1px 1px 1px #292d32;
+
+}
+
+/* ---------------head nav----------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  min-height: 10vh;
+  background-color: #7b39eb;
+
+}
+
+nav div {
+  margin: 3vh;
+}
+
+.logo img {
+  display: flex;
+  height: 8vh;
+}
+
+/* ------------------menu acceuil----------------------- */
+.nav-links li {
+  list-style: none;
+  opacity: 0;
+}
+
+.nav-links a {
+  color: #febc0c;
+  text-decoration: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #febc0c;
+  transition: all 0.3s ease;
+}
+
+.nav-links {
+  z-index: 1;
+  justify-content: space-around;
+  position: absolute;
+  border-right: 1px solid #7b39eb;
+  border-bottom: 1px solid #7b39eb;
+  border-bottom-right-radius: 10px;
+  left: 40%;
+  height: 50vh;
+  top: 14vh;
+  background: #292d32;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  transform: translateX(-200%);
+  transition: transform 0.5s ease-in;
+
+}
+
+.burger {
+  display: block;
+  cursor: pointer;
+}
+
+.nav-active {
+  transform: translateX(-100%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+a{
+  text-decoration: none;
+}
+.panier p {
+  font-size: 25px;
+}
+
+.panier {
+
+  margin: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+
+
+/* ---------------main offre----------------- */
+
+
+.img-offre img {
+  border: 1px solid #292d32;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.text-offre {
+  display: flex;
+  text-shadow: none;
+  font-size: small;
+  color: #7b39eb;
+  background: #febc0c;
+  opacity: 0.9;
+}
+
+.text-offre p {
+  animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(220%);
+    /* Commence hors écran à droite */
+  }
+
+  100% {
+    transform: translateX(-100%);
+    /* Finit complètement à gauche */
+  }
+}
+
+/* ----------------------main meilleur vente-------------- */
+.meilleur-vente {
+
+  display: grid;
+  margin: 0 auto;
+  grid-gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+  width: 75%;
+
+
+}
+
+
+.vente-titre {
+  border-top: 2px solid #292d32;
+  color: #febc0c;
+  background-color: #7b39eb;
+  text-align: center;
+  padding: 15px;
+
+}
+
+.vente {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  height: auto;
+  background-color: #7b39eb;
+  border: 1px solid #7b39eb;
+  padding: 1px;
+  border-radius: 10px;
+  text-align: center;
+  color: #febc0c;
+
+}
+
+.vente p {
+  font-size: medium;
+  padding: 10px;
+}
+
+.vente img {
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.vente button {
+  background-color: #D9D9D9;
+  text-align: center;
+  font-size: medium;
+  padding: 3px;
+  margin: 5px;
+  border-radius: 50px;
+  box-shadow: #292d32 1PX 1PX;
+  border: none;
+  transition: transform 0.3s;
+}
+
+
+
+.vente button:hover {
+  transform: scale(1.05);
+}
+
+.vente button a {
+  text-decoration: none;
+
+}
+
+/* ----------------------selction modele ------------------------- */
+
+.voiture {
+  width: 100%;
+  /* display: flex; */
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 0.5rem;
+  color: #292d32;
+  margin-top: 1rem;
+  background-color: #7b39eb;
+}
+
+.img-voiture:nth-child(1) {
+
+  color: #febc0c;
+  background-color: #7b39eb;
+  border: none;
+  padding: 1rem;
+}
+
+.img-voiture {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  padding: 1px;
+  border-radius: 5px;
+  text-align: center;
+  color: #7b39eb;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+ 
+}
+
+.img-voiture div img:hover {
+  transition: transform 0.2s;
+  transform: scale(1.05);
+}
+
+/* -------------------------footer--------------------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #7b39eb;
+  margin-top: 5%;
+  color: #febc0c;
+
+}
+
+.copy {
+  margin: auto;
+  display: flex;
+  padding: 1rem;
+  font-size: smaller;
+  flex-direction: column;
+}
+
+.contact {
+  display: flex;
+  padding: 1rem;
+  text-align: right;
+  font-size: smaller;
+}
+.copy a{
+  text-decoration: none;
+  color: red;
+  display: flex;
+  justify-content:center;
+  text-align: center;
+  
+}
+
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: larger;
+    overflow-x: hidden;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    min-height: 20vh;
+    background-color: #7b39eb;
+
+  }
+
+  nav div {
+    margin: 3vh;
+  }
+
+  .logo img {
+    display: flex;
+    height: 70px;
+  }
+
+  /*-------------menu accueil---------------------------  */
+  .burger div {
+    width: 35px;
+    height: 5px;
+    margin: 4px;
+
+  }
+
+  .nav-links {
+    top: 20vh;
+    width: 30%;
+    left: 30%;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-7px, 6px);
+
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-7px, -6px);
+  }
+
+  /* --------------------menu panier----------------------- */
+
+
+  .panier p {
+    font-size: 40px;
+    margin-right: 2rem;
+  }
+
+  /* -----------------main---------------------------------- */
+  .img-offre {
+    background-color: #f1f1f1;
+  }
+
+  .img-offre img {
+    border: 1px solid #292d32;
+    width: 80%;
+    display: flex;
+    margin: auto;
+  }
+
+  .text-offre {
+    font-size: medium;
+  }
+
+  @keyframes scrollText {
+    0% {
+      transform: translateX(350%);
+      /* Commence hors écran à droite */
+    }
+
+    100% {
+      transform: translateX(-200%);
+      /* Finit complètement à gauche */
+    }
+  }
+
+  .meilleur-vente {
+
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem;
+    width: 90%;
+
+
+  }
+
+  .img-voiture:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .voiture {
+    width: 100%;
+    display: flex;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5rem;
+    color: #292d32;
+    margin-top: 1rem;
+    background-color: #7b39eb;
+  }
+}

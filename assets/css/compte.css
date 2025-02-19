@@ -1,0 +1,144 @@
+body{
+   
+     --s: 30px; /* control the size */
+
+     --c: #0000, #292d32 0.5deg 119.5deg, #0000 120deg;
+     --g1: conic-gradient(from 60deg at 56.25% calc(425% / 6), var(--c));
+     --g2: conic-gradient(from 180deg at 43.75% calc(425% / 6), var(--c));
+     --g3: conic-gradient(from -60deg at 50% calc(175% / 12), var(--c));
+     background: var(--g1), var(--g1) var(--s) calc(1.73 * var(--s)), var(--g2),
+       var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0,
+       var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
+     background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
+   
+}
+main{
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin: 2rem;
+
+}
+h3{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    background-color: #7b39eb;
+    color: #febc0c;
+    margin: auto;
+    padding:5px 15px ;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px #131313;
+    
+}
+
+.infos {
+    box-shadow: 6px 5px 5px #131313;
+    background: #D9D9D9;
+    border-radius: 10px;
+    padding:2rem 4rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    height: 25%;
+}
+
+.infos h5 {
+    font-size: larger;
+    background-color: #7b39eb;
+    color: #febc0c;
+    padding: 5px 15px;
+    border-radius: 25px;
+    justify-self: start; 
+    box-shadow: 2px 2px 2px #131313;
+}
+
+.detail {
+    margin: 1rem;
+   display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+/* ------------historique--------------------------- */
+.historique{
+    margin-top: 2rem;
+    
+    height: 25%;
+}
+.historique h5{
+    font-size: larger;
+    margin: 2rem;
+    float: left;
+    background-color: #7b39eb;
+    color: #febc0c;
+    box-shadow: 2px 2px 2px #131313;
+    padding:5px 15px ;
+    border-radius: 25px;
+    
+}
+
+.histo-achat{
+    display: flex;
+    gap: 2rem;
+    height: auto;
+   
+    
+}
+.histo-achats{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #7b39eb;
+    width: 150px;
+    border: 1px solid black;
+    box-shadow: 6px 5px 5px #131313;
+    border-radius: 10px;
+}
+.histo-achats p{
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    margin: 1rem;
+    color: #febc0c;
+}
+.histo-achats img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+@media screen and (min-width: 768px) {
+    h3{
+        font-size: 2rem;
+       
+    }
+    .detail {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        gap: 1rem;
+     }
+     .infos h5{
+        font-size: 2rem;
+        margin-bottom: 3rem;
+     }
+     
+    h5 {
+     
+        margin: auto;
+    }
+    .historique {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        margin: 2rem;
+    }
+    .historique h5{
+        font-size: 2rem;
+        margin: auto;
+        
+      
+    }
+}

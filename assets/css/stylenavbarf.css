@@ -1,0 +1,260 @@
+ @font-face {
+  font-family:Copperplate-Gothic ;
+  src: url('/assets/font/Copperplate-Gothic-Std-30-BC.ttf');
+} 
+*{
+  font-family: Copperplate-Gothic;
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+font-size: 20px;
+
+}
+
+body {
+  overflow-x: hidden;
+  min-width:360px;
+ text-shadow: #292d32 1px 1px 1px;
+}
+
+
+/* ---------------head nav----------------- */
+nav {
+  display: flex;
+  justify-content:space-between ;
+
+  align-items: center;
+  min-height: 10vh;
+  background-color: #7b39eb;
+
+}
+
+nav div {
+  margin: 3vh;
+}
+
+.logo img {
+  display: flex;
+  height: 8vh;
+}
+/* ------------------menu acceuil----------------------- */
+.nav-links li {
+  list-style: none;
+  opacity: 0;
+}
+
+.nav-links a {
+  color: #febc0c;
+  text-decoration: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #febc0c;
+  transition: all 0.3s ease;
+}
+.nav-links {
+  z-index: 1;
+  justify-content: space-around;
+  position: absolute;
+  border-right: 1px solid #7b39eb;
+  border-bottom: 1px solid #7b39eb;
+  border-bottom-right-radius: 10px;
+  left: 40%;
+  height: 50vh;
+  top: 14vh;
+  background: #292d32;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  transform: translateX(-200%);
+  transition: transform 0.5s ease-in;
+  
+}
+
+.burger {
+  display: block;
+  cursor: pointer;
+}
+
+.nav-active {
+  transform: translateX(-100%);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* --------------------menu panier----------------------- */
+.menu-panier li {
+  opacity: 0;
+  list-style: none;
+  margin: 2rem;
+
+}
+
+.menu-panier a {
+  color: #febc0c;
+  text-decoration: none;
+}
+
+.menu-panier {
+  
+  z-index: 1;
+  position: absolute;
+  border-left: 1px solid #7b39eb;
+  border-bottom: 1px solid #7b39eb;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  right: 0%;
+  height: 50vh;
+  top: 14vh;
+  background: #292d32;
+  opacity: 0.9;
+  align-items: center;
+  width: 40%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+ 
+}
+.panier p {
+  font-size: 25px;
+}
+.panier{
+ 
+  margin: 10px;
+  display: block;
+  cursor: pointer;
+}
+/* anime */
+.menu-active{
+  transform: translateX(0%);
+}
+@keyframes menuFade {
+  from{
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+  
+}
+
+
+footer {
+  /* position: absolute;bottom: 0;  */
+  width: 100%;
+  display: flex;
+  
+  justify-content: center;
+  background-color: #7b39eb;
+  color: #febc0c;
+  
+}
+
+.copy {
+  margin: auto;
+  display: flex;
+  padding: 1rem;
+  font-size: smaller;
+}
+
+.contact {
+  display: flex;
+  padding: 1rem;
+  text-align: right;
+  font-size: smaller;
+}
+@media screen and (min-width: 768px) {
+  body{
+    font-size: larger;
+  }
+
+  nav {
+    display: flex;
+    justify-content:space-between ;
+  
+    align-items: center;
+    height: 20vh;
+    background-color: #7b39eb;
+  
+  }
+  
+  nav div {
+    margin: 6vh;
+  }
+  
+  .logo img {
+    display: flex;
+    height: 14vh;
+  }
+
+   /*-------------menu accueil---------------------------  */
+   .burger div {
+    width: 35px;
+    height: 5px;
+    margin: 4px;
+    
+  }
+  .nav-links {
+    top: 20vh;
+    width: 30%;
+    left: 30%;
+    }
+
+    .toggle .line1 {
+      transform: rotate(-45deg) translate(-7px, 6px);
+    
+    }
+    .toggle .line3 {
+      transform: rotate(45deg) translate(-7px, -6px);
+    }
+
+    /* --------------------menu panier----------------------- */
+    .menu-panier {
+      top: 20vh;
+      width: 30%;
+    }
+    .panier p {
+      font-size: 40px;
+      margin-right: 2rem;
+    }
+   
+    @keyframes scrollText {
+      0% {
+        transform: translateX(350%); /* Commence hors écran à droite */
+      }
+      100% {
+        transform: translateX(-200%); /* Finit complètement à gauche */
+      }
+    }}

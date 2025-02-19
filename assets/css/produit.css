@@ -1,0 +1,127 @@
+body{
+    --s: 30px; /* control the size */
+
+    --c: #0000, #292d32 0.5deg 119.5deg, #0000 120deg;
+    --g1: conic-gradient(from 60deg at 56.25% calc(425% / 6), var(--c));
+    --g2: conic-gradient(from 180deg at 43.75% calc(425% / 6), var(--c));
+    --g3: conic-gradient(from -60deg at 50% calc(175% / 12), var(--c));
+    background: var(--g1), var(--g1) var(--s) calc(1.73 * var(--s)), var(--g2),
+      var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0,
+      var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
+    background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
+  
+    
+}
+main{
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+}
+h2{
+ 
+    box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.5);
+
+    color: #febc0c;
+    text-align: center;
+
+    margin:2rem auto ;
+    background-color: #7b39eb;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+}
+/* ----------grille des produit--- */
+.grille-produit{
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+  
+    grid-template-rows:repeat( 2, 1fr) ;
+    gap: 2rem;
+    margin:2rem 6rem 2rem ;
+}
+
+
+/* ---------carte produit-------- */
+.produit{
+    background-color: #7b39eb;
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-align: center;
+    box-shadow: #292d32 0 6px 8px;
+    max-width: 500PX;
+}
+.produit img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    box-shadow: #292d32 2px 6px 6px;
+}
+
+.produit h4{
+    color: #febc0c;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.prix{
+    font-size: 1.3rem;
+    color: #febc0c;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+}
+.description{
+    background: #c2c2c2;
+    color: #7b39eb;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+.produit a button{
+    box-shadow: #292d32 2px 6px 6px;
+    
+ }
+.description:hover{
+    background: #fff;
+    color: #7b39eb;
+    transform: scale(1.1);
+}
+.ajt-panier{
+    background: #c2c2c2;
+    color: #7b39eb;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+.ajt-panier a button{
+    box-shadow: #292d32 2px 6px 6px;
+    
+ }
+ .ajt-panier:hover{
+    background: #fff;
+    color: #7b39eb;
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px){
+   
+   
+    .grille-produit{
+       
+        grid-template-columns:repeat(2, 1FR);
+
+    }
+    .produit img{
+        width: 100%;
+        max-width: 400PX;
+    
+    }    
+
+}

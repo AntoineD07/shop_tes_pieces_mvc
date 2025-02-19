@@ -1,0 +1,106 @@
+.meilleur-vente {
+    display: flex;
+    display: grid;
+   margin: 0 auto;
+    grid-gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    width: 75%;
+  
+  
+  }
+  
+  a hover{
+    transform: scale(1.1);
+  }
+  .vente-titre {
+    border-top: 2px solid #292d32;
+    color: #febc0c;
+    background-color: #7b39eb;
+    text-align: center;
+    padding: 15px;
+  
+  }
+  
+  .vente {
+    width: 90%;
+    height: auto;
+   
+    background-color: #7b39eb;
+    border: 1px solid #7b39eb;
+    padding: 1px;
+    border-radius: 10px;
+    text-align: center;
+    color: #febc0c;
+    padding: 0.1rem;
+  }
+  
+  .vente p {
+    
+    padding: 10px;
+  }
+  
+  .vente img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  /* ----------------------selction modele ------------------------- */
+  
+  .voiture {
+    width: 100%;
+    display: flex;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0.5rem;
+    color: #292d32;
+    margin-top: 1rem;
+    background-color: #7b39eb;
+  }
+  
+  .img-voiture:nth-child(1) {
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    color: #febc0c;
+    background-color: #7b39eb;
+    border: none;
+    padding: 1rem;
+  }
+  
+  .btn-voiture {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 1px;
+    border-radius: 5px;
+    text-align: center;
+    color: #7b39eb;
+  
+  }
+  .meilleur-vente {
+     
+      grid-gap: 10px;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 1rem;
+      width: 90%;
+    
+    
+    }
+    .img-voiture:nth-child(1) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .voiture {
+      width: 100%;
+      display: flex;
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0.5rem;
+      color: #292d32;
+      margin-top: 1rem;
+      background-color: #7b39eb;
+    }
+}

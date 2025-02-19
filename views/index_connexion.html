@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style_connexion.css">
+    <link rel="stylesheet" href="./assets/css/stylenavbarf.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <ul class="nav-links">
+            <li>
+                <a href="./index.html">acceuil</a>
+            </li>
+            <li>
+                <a href="./mon_compte.html">mon compte</a>
+            </li>
+
+            <li>
+                <a href="./index_connexion.html">connexion</a>
+            </li>
+            <li>
+                <a href="./index_inscription.html">inscription</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+
+        </div>
+        <a href="./index.html">
+            <div class="logo">
+                <img src="./assets/img/logo/shop_tes_piéces_1_-removebg-preview(1).png" alt="logo">
+            </div>
+        </a>
+        <div class="panier">
+            <p>&#128722</p>
+        </div>
+        <ul class="menu-panier">
+            <li>
+                <a href="./panier.html">Panier</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <form>
+        <h2>Se connecter</h2>
+        <div class="inputs">
+            <label for="email">Email</label>
+         <input type="email" id="email" name="email" placeholder="Ex: exemple@domaine.com" 
+       pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
+       title="Veuillez entrer une adresse email valide, comme exemple@domaine.com" required>
+
+    
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" placeholder="Mot de passe" required minlength="8"
+            pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" 
+            title="Doit contenir au moins une majuscule, une minuscule, un chiffre, un caractère spécial et 8 caractères au total." 
+            required>
+        </div>
+        <div>
+            <p class="inscription">Je n'ai pas de compte. <br>
+                Me <a href="./index_inscription.html">créer un compte</a>.
+            </p>
+        </div>
+        <div class="button">
+            <button type="submit">Connexion</button>
+        </div>
+    </form>
+
+    <footer>
+
+        <div class="copy">
+            <p>
+                mention legale
+            </p>
+        </div>
+        <div class="contact">
+
+            <p>
+                Shop tes piéces <br>
+                Adresse: 191 Route de rouen Amiens <br>
+                Numero: 06 06 06 06 06 <br>
+                Email: antoinedelarue07@gmail.com <br>
+            </p>
+
+
+
+        </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
