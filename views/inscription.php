@@ -26,8 +26,8 @@
             <label for="adresse">Adresse postale</label>
             <input type="text" id="adresse" name="adresse" placeholder="Adresse postale" required>
     
-            <label for="ville">Ville</label>
-            <input type="text" id="ville" name="ville" placeholder="Ville" required>
+            <!-- <label for="ville">Ville</label>
+            <input type="text" id="ville" name="ville" placeholder="Ville" required> -->
     
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Email"
@@ -48,26 +48,7 @@
         </div>
     </form>
     
-    <footer>
 
-        <div class="copy">
-            <p>
-                mention legale
-            </p>
-        </div>
-        <div class="contact">
-
-            <p>
-                Shop tes piéces <br>
-                Adresse: 191 Route de rouen Amiens <br>
-                Numero: 06 06 06 06 06 <br>
-                Email: antoinedelarue07@gmail.com <br>
-            </p>
-
-
-
-        </div>
-    </footer>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

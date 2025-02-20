@@ -54,27 +54,6 @@
 
 
 
-
-    <footer>
-
-        <div class="copy">
-            <p>
-                mention legale
-            </p>
-        </div>
-        <div class="contact">
-
-            <p>
-                Shop tes piéces <br>
-                Adresse: 191 Route de rouen Amiens <br>
-                Numero: 06 06 06 06 06 <br>
-                Email: antoinedelarue07@gmail.com <br>
-            </p>
-
-
-
-        </div>
-    </footer>
     <script src="./assets/js/script.js"></script>
 </body>
 

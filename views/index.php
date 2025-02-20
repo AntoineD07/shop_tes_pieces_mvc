@@ -78,25 +78,25 @@
                     <p>E30</p>
                 </div>
             </a>
-            <a href="./flitreProduit.html" class="img-voiture">
+            <a href="/filtreProduit" class="img-voiture">
                 <div>
                     <img src="/assets/img/modele/r34.jpg" alt="R34">
                     <p>R34</p>
                 </div>
             </a>
-            <a href="./flitreProduit.html" class="img-voiture">
+            <a href="/filtreProduit" class="img-voiture">
                 <div>
                     <img src="/assets/img/modele/s13_1.jpg" alt="S13">
                     <p>S13</p>
                 </div>
             </a>
-            <a href="./flitreProduit.html" class="img-voiture">
+            <a href="/filtreProduit" class="img-voiture">
                 <div>
                     <img src="/assets/img/modele/gt86_1.jpg" alt="GR86">
                     <p>GR86</p>
                 </div>
             </a>
-            <a href="./flitreProduit.html" class="img-voiture">
+            <a href="/filtreProduit" class="img-voiture">
                 <div>
                     <img src="/assets/img/modele/supra.jpg" alt="supra">
                     <p>Supra 4</p>
@@ -105,29 +105,7 @@
         </section>
 
     </main>
-    <footer>
 
-        <div class="copy">
-            <p>
-                mention legale
-            </p>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">ne pas cliquer</a>           
-
-        </div>
-        <div class="contact">
-
-            <p>
-
-                Shop tes piéces <br>
-                Adresse: 191 Route de rouen Amiens <br>
-                Numero: 06 06 06 06 06 <br>
-                Email: antoinedelarue07@gmail.com <br>
-            </p>
-
-
-
-        </div>
-    </footer>
 
     <script src="./assets/js/script.js"></script>
 

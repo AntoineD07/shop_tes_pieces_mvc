@@ -120,6 +120,8 @@ h2{
     .grille-produit{
        
         grid-template-columns:repeat(2, 1FR);
+        gap: 2rem;
+        margin: 1rem;
 
     }
     .produit img{
