@@ -86,13 +86,13 @@
             </a>
             <a href="/filtreProduit" class="img-voiture">
                 <div>
-                    <img src="/assets/img/modele/s13_1.jpg" alt="S13">
+                    <img src="/assets/img/modele/s13.jpg" alt="S13">
                     <p>S13</p>
                 </div>
             </a>
             <a href="/filtreProduit" class="img-voiture">
                 <div>
-                    <img src="/assets/img/modele/gt86_1.jpg" alt="GR86">
+                    <img src="/assets/img/modele/gr86.jpg" alt="GR86">
                     <p>GR86</p>
                 </div>
             </a>

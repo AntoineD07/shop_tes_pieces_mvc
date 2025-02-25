@@ -23,25 +23,25 @@
         <div class="pieces">
            <a href="/produit">
             <div class="type">
-                <img src="./assets/img/choix_piece/BORBET_A_CLASSIC_3.jpg" alt="Jantes">
+                <img src="/assets/img/choix_piece/jante.jpg" alt="Jantes">
                 <p>Choix de jantes</p>
             </div>
         </a>
         <a href="/produit">
             <div  class="type">
-                <img src="./assets/img/choix_piece/combines-filetes-bilstein-b14-clio-3-rs.jpg" alt="">
+                <img src="./assets/img/choix_piece/combines.jpg" alt="">
                 <p> Amortisseurs</p>
             </div>
         </a>
         <a href="/produit">
             <div  class="type">
-                <img src="./assets/img/choix_piece/s-l960.jpg" alt="Kit carrosserie">
+                <img src="./assets/img/choix_piece/carrosserie.jpg" alt="Kit carrosserie">
                 <p>Kit carrosserie</p>
             </div>
         </a>
         <a href="/produit">
             <div  class="type">
-                <img src="./assets/img/choix_piece/ffff.png" alt="freins">
+                <img src="./assets/img/choix_piece/frein.png" alt="freins">
                 <p>Kit frein</p>
             </div>
         </a>
