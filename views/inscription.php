@@ -13,7 +13,7 @@
 <body>
     <form action="/inscription" method="POST">
         <h2>Inscription</h2>
-        <?php if (isset($message)) { echo "<p>$message</p>"; } ?>
+        <?php if (isset($message)) { echo "<p>$message </p> "; } ?>
         <div class="inputs">
             <label for="nom">Nom</label>
             <input type="text" id="nom" name="nom" placeholder="Nom" required>

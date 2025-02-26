@@ -23,18 +23,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
     if ($createUser->emailExist($email)) {
-        $message = "Erreur: L'email existe déjà.";
+        $message = "Erreur: L'email existe déjà. ";
     } elseif ($createUser->phoneExist($telephone)) {
         $message = "Erreur: Le numéro de téléphone existe déjà.";
     } else {
         if ($createUser->newUser($nom, $prenom, $telephone, $adresse, $email, $password)) {
-            $message = "Inscription réussie!";
+            $message = "Inscription réussie! <a href=\"/mon_compte\">mon compte</a>";
         } else {
             $message = "Erreur lors de l'inscription.";
         }
     }
 }
-
 
 
 
