@@ -1,5 +1,5 @@
 <?php
-
+include 'database/connexion_bdd.php';
 class createUser {
     //co bdd
     private $connexion;

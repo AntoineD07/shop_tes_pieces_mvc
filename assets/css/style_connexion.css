@@ -27,7 +27,10 @@ form{
     border-radius: 10px;
   
 }
-
+#message p {
+    color: red;
+    font-size: 0.8rem;
+}
 
 form h2{
     color: #febc0c;

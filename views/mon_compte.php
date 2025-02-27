@@ -12,8 +12,10 @@
 <body>
 
 
-
-
+<?php
+    
+    
+?>
     <main>
         <!-- -----------info perso------ -->
         <h3>Mon compte</h3>
@@ -26,6 +28,7 @@
                 <p>adresse</p>
                 <p>numero</p>
                 <p>email</p>
+        
             </div>
         </div>
          <!-- -----------info perso------ -->
@@ -36,6 +39,7 @@
             <h5>Historique</h5>
         </div>
         <div class="histo-achat">
+          
             <div class="histo-achats">
                 <img src="./assets/img/medium-_A3A6872.jpg" alt="">
                 <p>Lorem ipsum dolor sit, amet consectetur</p>
