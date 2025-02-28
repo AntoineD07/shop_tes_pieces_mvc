@@ -30,8 +30,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-
-
 //recup vue
     require 'views/inscription.php';
 

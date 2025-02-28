@@ -1,3 +1,7 @@
+
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +11,11 @@
     <link rel="stylesheet" href="/assets/css/navbar.css">
 </head>
 <body>
+  
+<nav>    
+  
     
-<nav>
+   
 
         <ul class="nav-links">
             <li>
@@ -19,11 +26,19 @@
             </li>
 
             <li>
+            <?php if (!isset($_SESSION['user_id'])): ?>
                 <a href="/connexion">connexion</a>
+                <?php endif; ?>
+          
+                <?php if (isset($_SESSION['user_id'])): ?>
+                    <a href="/logout">Se déconnecter</a>
+                <?php endif; ?>
             </li>
+   
             <li>
                 <a href="/inscription">inscription</a>
             </li>
+        
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -44,11 +59,7 @@
         </a>
         </div>
         
-        <!-- <ul class="menu-panier">
-            <li>
-                <a href="./panier.html">Panier</a>
-            </li>
-        </ul> -->
+
 
     </nav>
 </body>

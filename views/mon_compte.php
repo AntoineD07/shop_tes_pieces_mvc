@@ -10,25 +10,34 @@
 </head>
 
 <body>
-
-
-<?php
-    
-    
-?>
     <main>
+
+
         <!-- -----------info perso------ -->
         <h3>Mon compte</h3>
         <div class="infos">
             <h5>information personnelle</h5>
             <div class="detail">
-                <p>nom</p>
-                <p>prenom</p>
-                <p>ville</p>
-                <p>adresse</p>
-                <p>numero</p>
-                <p>email</p>
-        
+            <form method="POST" action="">
+                <div class="detail">
+                    <label for="firstname">Prénom:</label>
+                    <input type="text" id="firstname" name="firstname" value="<?php echo $_SESSION['user_firstname']; ?>" required>
+                    
+                    <label for="lastname">Nom:</label>
+                    <input type="text" id="lastname" name="lastname" value="<?php echo $_SESSION['user_lastname']; ?>" required>
+                    
+                    <label for="address">Adresse:</label>
+                    <input type="text" id="address" name="address" value="<?php echo $_SESSION['user_address']; ?>" required>
+                    
+                    <label for="phone">Numéro de téléphone:</label>
+                    <input type="text" id="phone" name="phone" value="<?php echo $_SESSION['user_phone']; ?>" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="<?php echo $_SESSION['user_email']; ?>" required>
+                </div>
+         
+             
+            </form>
             </div>
         </div>
          <!-- -----------info perso------ -->
