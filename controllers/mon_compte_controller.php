@@ -26,14 +26,14 @@ $_SESSION['user_name'] = $user['firstname'] . ' ' . $user['lastname'];
 
 // Si mise à jour 
 if (isset($_POST['update'])) {
-    // Récupérer les valeurs avec une valeur par défaut si elles n'existent pas
+    // Récupérer les valeurs avec une valeur par défaut
     $firstname = isset($_POST['firstname']) ? $_POST['firstname'] : '';
     $lastname = isset($_POST['lastname']) ? $_POST['lastname'] : '';
     $address = isset($_POST['address']) ? $_POST['address'] : '';
     $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
     $email = isset($_POST['email']) ? $_POST['email'] : '';
 
-    // Mettre à jour seulement si les champs ne sont pas vides
+    // Mettre à jour si les champs ne sont pas vides
     if ($firstname && $lastname && $email) {
         $connexionUser->updateUser($user_id, $firstname, $lastname, $address, $phone, $email);
         $_SESSION['user_firstname'] = $firstname;
