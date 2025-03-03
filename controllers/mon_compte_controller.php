@@ -1,28 +1,62 @@
 <?php
-    require "templates/navbar.php";   
-    require "models/connexionUser.php";
+require "templates/navbar.php"; // session_start()
+require "models/gestionUser.php";
+
+// Vérifier si user est connecté
+if (!isset($_SESSION['user_id'])) {
+    header("Location: /connexion");
+    exit();
+}
 
 
-    // session_start();
+$connexion = connexionBdd();
+$connexionUser = new gestionUser($connexion);
 
-    //si pas co redirige a connexion
-    if (!isset($_SESSION['user_id'])){
-        header("Location: /connexion");
-        exit();
-    }
-    $connexion = connexionBdd();
-    $connexionUser = new connexionUser($connexion);
-
-    $user_id = $_SESSION['user_id'];
+// Récupérer l'ID de user
+$user_id = $_SESSION['user_id'];
 $user = $connexionUser->getUserById($user_id);
 
-if ($user) {
-    $_SESSION['user_firstname'] = $user['firstname'];
-    $_SESSION['user_lastname'] = $user['lastname'];
-    $_SESSION['user_address'] = $user['address'];
-    $_SESSION['user_phone'] = $user['phone'];
+// info de base de user
+$_SESSION['user_firstname'] = $user['firstname'];
+$_SESSION['user_lastname'] = $user['lastname'];
+$_SESSION['user_address'] = $user['address'];
+$_SESSION['user_phone'] = $user['phone'];
+$_SESSION['user_email'] = $user['email'];
+$_SESSION['user_name'] = $user['firstname'] . ' ' . $user['lastname'];
+
+// Si mise à jour 
+if (isset($_POST['update'])) {
+    // Récupérer les valeurs avec une valeur par défaut si elles n'existent pas
+    $firstname = isset($_POST['firstname']) ? $_POST['firstname'] : '';
+    $lastname = isset($_POST['lastname']) ? $_POST['lastname'] : '';
+    $address = isset($_POST['address']) ? $_POST['address'] : '';
+    $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
+    $email = isset($_POST['email']) ? $_POST['email'] : '';
+
+    // Mettre à jour seulement si les champs ne sont pas vides
+    if ($firstname && $lastname && $email) {
+        $connexionUser->updateUser($user_id, $firstname, $lastname, $address, $phone, $email);
+        $_SESSION['user_firstname'] = $firstname;
+        $_SESSION['user_lastname'] = $lastname;
+        $_SESSION['user_address'] = $address;
+        $_SESSION['user_phone'] = $phone;
+        $_SESSION['user_email'] = $email;
+        $_SESSION['user_name'] = $firstname . ' ' . $lastname;
+        $message = "Informations mises à jour !";
+    } else {
+        $message = "Veuillez remplir les champs obligatoires.";
+    }
 }
-    require 'views/mon_compte.php';
-   
-    require "templates/footer.php";
+
+
+if (isset($_POST['delete'])) {
+    $connexionUser->deleteUser($user_id);
+    session_destroy();
+    header("Location: /index");
+    exit();
+}
+
+// Affiche la page
+require 'views/mon_compte.php';
+require "templates/footer.php";
 ?>

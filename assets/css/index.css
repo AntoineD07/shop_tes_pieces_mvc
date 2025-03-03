@@ -52,9 +52,12 @@ body {
   display: flex;
   text-shadow: none;
   font-size: small;
+  /* height: 1.2rem; */
   color: #7b39eb;
   background: #febc0c;
   opacity: 0.9;
+  
+  white-space: nowrap;
 }
 
 .text-offre p {
@@ -63,7 +66,7 @@ body {
 
 @keyframes scrollText {
   0% {
-    transform: translateX(350%);
+    transform: translateX(450%);
     /* Commence hors écran à droite */
   }
 
@@ -80,8 +83,8 @@ body {
   margin: 0 auto;
   grid-gap: 15px;
   grid-template-columns: repeat(2, 1fr);
-  padding: 1rem;
-  width: 75%;
+  padding: 0.5rem;
+  width: 95%;
 
 
 }
@@ -224,7 +227,7 @@ body {
     grid-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     padding: 1rem;
-    width: 90%;
+    width: 100%;
 
 
   }
