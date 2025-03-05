@@ -10,9 +10,8 @@
 </head>
 
 <body>
-   
 
-
+<!-- 
     <main>
         <h2>Vos produits</h2>
         <section class="grille-produit">
@@ -74,7 +73,37 @@
 
         </section>
 
-    </main>
+    </main> -->
+
+
+    <main>
+    
+    <?php if (isset($message)): ?>
+       <h2> <?php echo $message; ?></h2>
+    <?php endif; ?>
+
+    <section class="contnaire-produit">
+        <?php if (empty($pieces)): ?>
+            <p>Aucune pièce disponible pour cette combinaison.</p>
+        <?php else: ?>
+            <?php foreach ($pieces as $piece): ?>
+                <div class="produit">
+                    <img src="<?php echo htmlspecialchars($piece['img_piece']); ?>" 
+                    alt="<?php echo htmlspecialchars($piece['nom_piece']); ?>">
+                    <h4><?php echo htmlspecialchars($piece['nom_piece']); ?></h4>
+                    <p class="prix"><?php echo htmlspecialchars($piece['prix']); ?> €</p>
+                
+                    <a href="/description?piece_id=<?php echo urlencode($piece['id_piece']); ?>">
+                        <button class="description">Description</button>
+                    </a>
+                    <a href="/panier?action=add&piece_id=<?php echo urlencode($piece['id_piece']); ?>">
+                        <button class="ajt-panier">Ajouter au panier</button>
+                    </a>
+                </div>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </section>
+</main>
 
     <script src="./assets/js/script.js"></script>
     <!-- <script src="./assets/js/test/ajoutPanier.js"></script> -->

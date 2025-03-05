@@ -33,15 +33,14 @@ h2{
     border-radius: 25px;
 }
 /* ----------grille des produit--- */
-.grille-produit{
-    display: grid;
-    grid-template-columns:repeat(1,1fr);
-  
-    grid-template-rows:repeat( 2, 1fr) ;
+.contnaire-produit{
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
-    margin:auto;
-    margin-bottom: 1rem;
-}
+ 
+} 
 
 
 /* ---------carte produit-------- */
@@ -51,10 +50,12 @@ h2{
     padding: 0.5rem;
     text-align: center;
     box-shadow: #292d32 0 6px 8px;
-    max-width: 500PX;
+    /* width: 400PX; */
 }
 .produit img{
-    width: 100%;
+    width: 400px;
+    height: 350px;
+   
     border-radius: 10px;
     margin-bottom: 0.5rem;
     box-shadow: #292d32 2px 6px 6px;
@@ -114,20 +115,3 @@ h2{
     transform: scale(1.1);
 }
 
-@media screen and (min-width: 768px){
-   
-   
-    .grille-produit{
-       
-        grid-template-columns:repeat(2, 1FR);
-        gap: 2rem;
-        margin: 1rem;
-
-    }
-    .produit img{
-        width: 100%;
-        max-width: 400PX;
-    
-    }    
-
-}

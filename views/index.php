@@ -65,44 +65,29 @@
             <div class="img-voiture">
                 <h2>Votre voiture</h2>
             </div>
-            <a href="/filtreProduit" class="img-voiture">
-                <div>
-                    <img src="/assets/img/modele/e46.jpg" alt="E46">
-                    <p>E46</p>
+            <?php 
+            // var_dump($cars);
+            ?>
+            <!-- recupere toute les info $cars dans index controleur -->
+            <?php foreach ($cars as $car): ?>
+                <!-- donne a chaque lien $car le bon id de $cars -->
+                <a href="/filtreProduit?cars_id=<?php echo htmlspecialchars($car['cars_id']);?>"class="img-voiture">
+                    <!-- recup img est nom est le donne a chaque lien -->
+                    <div>
+                        <img 
+                         src="<?php echo htmlspecialchars($car['img']);?>"
+                         alt="<?php echo htmlspecialchars($car['cars_name']);?>"
+                        >
+                        <p><?php echo htmlspecialchars($car['cars_name']);?></p>
+                    </div>
+                </a>
+                <?php endforeach; ?>
 
-                </div>
-            </a>
-            <a href="/filtreProduit" class="img-voiture">
-                <div>
-                    <img src="/assets/img/modele/e30.jpg" alt="E30">
-                    <p>E30</p>
-                </div>
-            </a>
-            <a href="/filtreProduit" class="img-voiture">
-                <div>
-                    <img src="/assets/img/modele/r34.jpg" alt="R34">
-                    <p>R34</p>
-                </div>
-            </a>
-            <a href="/filtreProduit" class="img-voiture">
-                <div>
-                    <img src="/assets/img/modele/s13.jpg" alt="S13">
-                    <p>S13</p>
-                </div>
-            </a>
-            <a href="/filtreProduit" class="img-voiture">
-                <div>
-                    <img src="/assets/img/modele/gr86.jpg" alt="GR86">
-                    <p>GR86</p>
-                </div>
-            </a>
-            <a href="/filtreProduit" class="img-voiture">
-                <div>
-                    <img src="/assets/img/modele/supra.jpg" alt="supra">
-                    <p>Supra 4</p>
-                </div>
-            </a>
         </section>
+
+
+
+
 
     </main>
 
