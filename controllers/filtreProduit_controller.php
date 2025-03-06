@@ -3,7 +3,7 @@
     include 'database/connexion_bdd.php';
 
     $connexion = connexionbdd();
-//recuper lid cars dans l'url est verif si c'est en entier
+//recuper lid cars dans l'url et verif si c'est en entier
     $cars_id = isset($_GET['cars_id'])?(int)$_GET['cars_id']:0;
 
     if ($cars_id) {

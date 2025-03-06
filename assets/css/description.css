@@ -1,4 +1,4 @@
-body {
+ body {
 
     --s: 30px;
     /* control the size */
@@ -12,16 +12,128 @@ body {
         var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
     background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
 
+}
+main{
+    min-height: 70vh;
+    margin: 8px;
+}
+h2{
+    color: #febc0c;
+    background: #7b39eb;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 10rem;
+    border-radius: 25px;
+    padding: 10PX;
+    box-shadow: #292d32 2px 2px 5px;
+  
+}
+.piece-detail {
+    
+    background: #c2c2c2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 10px;
+    justify-content: space-between;
+    height: 70%;
+    padding: 1rem;
+}
+.contnaire-g{
+    gap: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+   
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.text h3{
+    color: #7b39eb;
+    font-size: x-large;
+}.text p{
+    font-size: 1rem;
+}
+.contnaire-g img{
+    width: 200PX;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: #7b39eb 2px 2px 5px;
 
 }
-/* #7b39eb
+.titre{
+    color: #febc0c;
+    background: #7b39eb;
+    padding: 5px;
+    margin: 1rem 0 1rem 1rem;
+    width: 10rem;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: #292d32 2px 2px 5px;
+}
+.contnaire_d {
+    display: flex;
+    flex-direction: column;
+
+}
+.contnaire-btn {
+    display: flex;
+    justify-content: flex-end; 
+}
+button{
+  
+    background-color: #7b39eb;
+    color: #febc0c;
+    padding: 5px;
+    margin-top: 2rem;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: #292d32 2px 2px 5px;
+  
+}
+@media screen and (min-width:768px ) {
+
+    .piece-detail {
+        
+        background: #c2c2c2;
+        display: flex;
+        flex-direction: row;
+        margin: 0.5rem;
+        
+        justify-content: space-between;
+        height: 70%;
+        padding: 1rem;
+    }
+    .contnaire-g{
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+       
+    }
+    .contnaire-g img{
+        width: 300PX;
+        height: 300px;
+    
+    }
+    .contnaire_d p{
+        font-size: x-large;
+    }
+
+}
+/*
+#7b39eb
 #febc0c
-#292d32 */
+#292d32
 main{
     min-height: 90vh
 }
 
-/* Container */
+
 .container {
     width: 90%;
     margin: 2rem auto;
@@ -157,4 +269,4 @@ button{
         width: 100%;
     }
 
-}
+} */
