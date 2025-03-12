@@ -6,11 +6,15 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./assets/css/style_connexion.css">
-
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
    
 </head>
 
 <body>
+<?php
+include 'templates/navbar.php'; 
+?>
     <form action="/inscription" method="POST">
         <h2>Inscription</h2>
         <?php if (isset($message)) { echo "<p>$message </p> "; } ?>
@@ -49,6 +53,9 @@
         </div>
     </form>
     
+    <?php
+    include 'templates/footer.php';
+?>
 
     <script src="./assets/js/script.js"></script>
 </body>

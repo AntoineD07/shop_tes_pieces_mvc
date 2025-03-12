@@ -1,9 +1,9 @@
 footer {
     display: flex;
     justify-content: space-between;
-  
+  margin-top: 1rem;
     background-color: #7b39eb;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     color: #febc0c;
   
   }

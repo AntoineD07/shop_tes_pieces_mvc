@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shop tes piéces</title>
     <link rel="stylesheet" href="/assets/css/index.css">
-
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
 
 </head>
 
 <body>
-
+    <?php
+include 'templates/navbar.php'; 
+?>
 
     <main>
 
@@ -90,7 +93,9 @@
 
 
     </main>
-
+<?php
+    include 'templates/footer.php';
+?>
 
     <script src="./assets/js/script.js"></script>
 

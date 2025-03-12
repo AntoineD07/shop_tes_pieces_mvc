@@ -20,4 +20,6 @@ function getPieceDetails($piece_id) {
     // Retourne les détails de la pièce (ou null si non trouvée)
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
+
+
 ?>

@@ -1,5 +1,5 @@
 <?php
-    require "templates/navbar.php";
+
 
     require_once "models/getProductData.php";
 
@@ -25,5 +25,5 @@
 }
   
     require 'views/Produit.php';
-    require "templates/footer.php";
+   
 ?>

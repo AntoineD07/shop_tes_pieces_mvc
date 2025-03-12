@@ -7,9 +7,14 @@
     <title>mon compte</title>
 
     <link rel="stylesheet" href="./assets/css/compte.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
 </head>
 
 <body>
+<?php
+include 'templates/navbar.php'; 
+?>
     <main>
 
 
@@ -76,7 +81,10 @@
 
 
 
+    <?php
+    include 'templates/footer.php';
+?>
 
+    <script src="./assets/js/script.js"></script>
 </body>
-<script src="./assets/js/script.js"></script>
 </html>

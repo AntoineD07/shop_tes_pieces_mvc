@@ -1,5 +1,4 @@
 <?php
-    require "templates/navbar.php";
    require_once 'models/getPieceDetails.php';
 
     
@@ -21,5 +20,5 @@ $piece_id = isset($_GET['piece_id']) ? (int)$_GET['piece_id']:0;
 }
  
     require 'views/description.php';
-    require "templates/footer.php";
+   
 ?>

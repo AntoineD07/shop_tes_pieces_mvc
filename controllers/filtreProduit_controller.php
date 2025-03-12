@@ -1,7 +1,7 @@
 <?php
-    require "templates/navbar.php";
+   
 
-require_once 'models/getCarAndPieces.php';
+    require_once 'models/getCarAndPieces.php';
 
 //recuper lid cars dans l'url et verif si c'est en entier
     $cars_id = isset($_GET['cars_id'])?(int)$_GET['cars_id']:0;
@@ -28,5 +28,5 @@ if ($cars_id) {
 
 
     require 'views/filtreProduit.php';
-    require "templates/footer.php";
+   
 ?>

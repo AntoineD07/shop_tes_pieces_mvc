@@ -1,7 +1,5 @@
 <?php
 
-// recup la navbar
-    require "templates/navbar.php";
 
 //classe createuser
     require 'models/createUser.php';
@@ -33,6 +31,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 //recup vue
     require 'views/inscription.php';
 
-    //recup le footer
-    require "templates/footer.php";
+ 
 ?>

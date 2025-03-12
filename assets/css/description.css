@@ -14,8 +14,9 @@
 
 }
 main{
-    min-height: 70vh;
+    min-height: 90vh;
     margin: 8px;
+    margin-bottom: 1rem;
 }
 h2{
     color: #febc0c;
@@ -38,7 +39,7 @@ h2{
     gap: 1rem;
     border-radius: 10px;
     justify-content: space-between;
-    height: 70%;
+  
     padding: 1rem;
 }
 .contnaire-g{
@@ -105,7 +106,7 @@ button{
         margin: 0.5rem;
         
         justify-content: space-between;
-        height: 70%;
+       
         padding: 1rem;
     }
     .contnaire-g{

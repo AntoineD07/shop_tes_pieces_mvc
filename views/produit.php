@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>produit</title>
  
     <link rel="stylesheet" href="./assets/css/produit.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
 </head>
 
 <body>
+<?php
+include 'templates/navbar.php'; 
+?>
 
-<!-- 
-    <main>
+    <!-- <main>
         <h2>Vos produits</h2>
         <section class="grille-produit">
 
@@ -74,8 +78,6 @@
         </section>
 
     </main> -->
-
-
     <main>
     
     <?php if (isset($message)): ?>
@@ -104,9 +106,13 @@
         <?php endif; ?>
     </section>
 </main>
-
+    <?php
+    include 'templates/footer.php';
+?>
+   
     <script src="./assets/js/script.js"></script>
-    <!-- <script src="./assets/js/test/ajoutPanier.js"></script> -->
+   
+
 </body>
 
 </html>

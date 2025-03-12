@@ -7,10 +7,14 @@
     <title>descrription</title>
 
     <link rel="stylesheet" href="./assets/css/description.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
 </head>
 
 <body>
-
+<?php
+include 'templates/navbar.php'; 
+?>
 
 
 
@@ -51,8 +55,10 @@
     <?php endif; ?>
 </main>
 
-
-</body>
+<?php
+    include 'templates/footer.php';
+?>
 <script src="./assets/js/script.js"></script>
+</body>
 
 </html>

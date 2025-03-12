@@ -1,5 +1,5 @@
 <?php
-require "templates/navbar.php"; // session_start()
+
 require "models/gestionUser.php";
 
 // Vérifier si user est connecté
@@ -58,5 +58,5 @@ if (isset($_POST['delete'])) {
 
 // Affiche la page
 require 'views/mon_compte.php';
-require "templates/footer.php";
+
 ?>

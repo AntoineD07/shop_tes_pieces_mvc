@@ -1,5 +1,5 @@
 <?php
-    require "templates/navbar.php";
+    // require "templates/navbar.php";
     require 'models/gestionUser.php';
 
     $connexion = connexionBdd();
@@ -37,5 +37,5 @@
 
 
     require 'views/connexion.php';
-    require "templates/footer.php";
+    // require "templates/footer.php";
 ?>

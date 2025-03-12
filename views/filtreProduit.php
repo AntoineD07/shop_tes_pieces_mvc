@@ -7,9 +7,14 @@
     <title>filtre produit</title>
 
     <link rel="stylesheet" href="/assets/css/filtreProduit.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
 </head>
     
 <body>
+<?php
+include 'templates/navbar.php'; 
+?>
 
 
     <main> 
@@ -37,7 +42,9 @@
     </div>
 </main>
 
-
+<?php
+    include 'templates/footer.php';
+?>
     <script src="./assets/js/script.js"></script>
 </body>
 

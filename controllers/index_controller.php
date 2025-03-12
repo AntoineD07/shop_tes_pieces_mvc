@@ -1,5 +1,5 @@
 <?php
-require "templates/navbar.php";
+
 // include 'database/connexion_bdd.php';
 require_once 'models/getAllCars.php';
 
@@ -11,7 +11,5 @@ $cars = getAllCars();
 // $stmt = $connexion->prepare($sql);
 // $stmt->execute();
 // $cars = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-require 'views/index.php';
-require "templates/footer.php";
+include 'views/index.php';
 ?>

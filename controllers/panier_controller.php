@@ -1,5 +1,9 @@
 <?php
-    require "templates/navbar.php";
+  
+    // require "models/getPieceDetails.php" ;
+  
+ 
+    
     require 'views/panier.php';
-    require "templates/footer.php";
+
 ?>
