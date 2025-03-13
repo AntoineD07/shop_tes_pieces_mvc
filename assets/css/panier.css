@@ -20,7 +20,8 @@ body{
 
 
 main{
-    margin: 2rem;
+    margin: 1rem;
+    min-height: 80vh;
     
 }
 h3{
@@ -36,51 +37,15 @@ h3{
     box-shadow: 2px 2px 2px #131313;
 
 }
-.avancement {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 20px 0;
-    height: 2rem;
+.message{
+    background: linear-gradient(145deg, #d4d4f8, #ebebeb);
+    height: 50vh;
     text-align: center;
-}
-.etape1, .etape2, .etape3{
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 2rem;
-    padding: auto;
-    color: #d2d2d2;
 
+    border-radius: 15px;
+   
 }
-.etape1 :nth-child(1){
-    background:#7b39eb;
-    color: #febc0c;
-    border-radius: 100%;
-    padding: 1rem;
-    width: 2rem;
-    height:2rem;  
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    
-}
-.etape2 :nth-child(1),
-.etape3 :nth-child(1){
-    background:#febc0c;
-    color: #7b39eb;
-    border-radius: 100%;
-    padding: 1rem;
-    width: 2rem;
-    height:2rem;  
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    
-}
+
 .bouton{
     display: flex;
     justify-content: end;
@@ -102,69 +67,158 @@ h3{
     background-color: #febc0c;
     color: #7b39eb;
 }
+
+#supp{
+   
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #292d32;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+#supp_2{
+    display: none;
+}
 .contnaire-panier{
-    background-color: #d2d2d2;
+    /* background: linear-gradient(145deg, #e6e6fa, #ffffff); */
+    /* background-color: #d2d2d2; */
     border-radius: 15px;
   
-    padding: 1rem;
+    padding: 0.5rem;
 }
 .produit{
-   
+    background: linear-gradient(145deg, #e6e6fa, #ffffff);
     background-color: #d2d2d2;
-    padding: 1rem;
+    padding: 0.5rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    text-align: center;
-    flex-direction: row;
+    flex-direction: column-reverse;
     border-radius: 15px;
-    box-shadow: 2px 2px 2px #131313;
-    border: #292d32 solid 1px;
-    margin: 1rem;
+    box-shadow: 2px 2px 2px #7b39eb;
+    border: #7b39eb solid 1px;
+    margin-bottom: 1rem;
 }
 .image{
     display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.image img{
-  
-    width: 100px;
-    height: 100px;
-    border-radius: 15px;
+    flex-direction: row-reverse;
+    /* align-items: center; */
+    justify-content: space-between;
 }
 .image h5{
-    margin-bottom: 1rem;
+    font-size: x-large;
+    color: #7b39eb;
+    margin-right: 2rem;
 }
-.quantite :nth-child(1) ,
-.prix :nth-child(1){
-    margin-bottom: 1rem;
+.image img{
+    /* justify-content: center;
+    align-self: center; */
+  margin-right: 10px ;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    border: #7b39eb solid 1px;
+    box-shadow: 2px 2px 2px #7b39eb;
 }
-.quantite p,
-.prix h6 {
+.quantite-prix{
     display: flex;
-    flex-direction: column;
- 
-    text-align: center;
-   
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
-.quantite input[type="number"] {
-    width: 3rem; 
-    height:auto; 
+.quantite{
+    text-align: center;   
+}
+.quantite p{
+    font-size: larger;
+}
+.quantite form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap :0.5rem;
+}
+.quantite input[type="number"]{
+    width: 2.5rem;
+    height: 30px;
     text-align: center;
-    font-size: 1rem;
-    border-radius: 5px;
+    text-decoration: none;
+
+}
+.quantite button {
+    width: 30px;
+    height: 30px;
+   align-self: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: larger;
+    box-shadow: #7b39eb 1px 1px 1px;
+    background: transparent 0;
+}
+.supprimer{
+    text-align: right;
     
 }
+.prix{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.prix h6{
+    font-size: larger;
+ 
+}
+.prix p{
+    color: #7b39eb;
+}
+
 .total{
     display: flex;
     flex-direction: column;
-    
+    background: #7b39eb;
     align-items: center;
-  
+    color: #febc0c;
+   width: 25%;
+   margin: auto;
+   padding: 1rem;
+   border-radius: 25px;
+   box-shadow: 2px 2px 2px #131313;
   
 }
 .total p{
     font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .produit{
+        flex-direction: row;
+        justify-content: space-between;
+     
+       
+      
+    }
+    .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+    }
+    .image{
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+    }
+    .quantite-prix{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+     
+       
+    }
+
+
 }

@@ -2,7 +2,7 @@ footer {
     display: flex;
     justify-content: space-between;
   margin-top: 1rem;
-    background-color: #7b39eb;
+  background: linear-gradient(145deg,#9d70ebe8, #7b39eb, #9d70eb);
     /* margin-top: 5%; */
     color: #febc0c;
   

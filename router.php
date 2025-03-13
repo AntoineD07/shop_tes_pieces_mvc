@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 $path = $_SERVER['REDIRECT_URL'];
 
 if ($path == '/'){

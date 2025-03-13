@@ -81,7 +81,7 @@ include 'templates/navbar.php';
     <main>
     
     <?php if (isset($message)): ?>
-       <h2> <?php echo $message; ?></h2>
+       <h2> <?php echo $message;?></h2>
     <?php endif; ?>
 
     <section class="contnaire-produit">
@@ -99,7 +99,7 @@ include 'templates/navbar.php';
                         <button class="description">Description</button>
                     </a>
                     <a href="/panier?action=add&piece_id=<?php echo urlencode($piece['id_piece']); ?>">
-                        <button class="ajt-panier">Ajouter au panier</button>
+                         <button class="ajt-panier">Ajouter au panier</button>
                     </a>
                 </div>
             <?php endforeach; ?>
