@@ -22,7 +22,7 @@ form{
     flex-direction: column;
     width: 95%;
     margin:10% auto 10%;    
-    background-color: #7b39eb;
+    background: linear-gradient(145deg, #7b39eb, #9d70eb);
     padding:  10%;
     border-radius: 10px;
   

@@ -160,13 +160,13 @@ body {
   padding: 0.5rem;
   color: #292d32;
   margin-top: 1rem;
-  background-color: #7b39eb;
+  background: linear-gradient(145deg, #7b39eb, #9d70eb);
 }
 
 .img-voiture:nth-child(1) {
 
   color: #febc0c;
-  background-color: #7b39eb;
+  background:transparent;
   border: none;
   padding: 1rem;
 }

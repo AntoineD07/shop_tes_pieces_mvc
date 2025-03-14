@@ -45,16 +45,17 @@ h2{
 
 /* ---------carte produit-------- */
 .produit{
-    background-color: #7b39eb;
+    background: linear-gradient(145deg,#9d70ebe8, #7b39eb, #9d70eb);
     border-radius: 10px;
     padding: 0.5rem;
     text-align: center;
     box-shadow: #292d32 0 6px 8px;
     margin: 5px;
+    width: 400px;
 }
 .produit img{
-    width: 350px;
-    height: 350px;
+    width: 100%;
+  
    
     border-radius: 10px;
     margin-bottom: 0.5rem;
@@ -114,4 +115,9 @@ h2{
     color: #7b39eb;
     transform: scale(1.1);
 }
+@media screen and (min-width:768px ) {
+    .produit{
+        width: 450px;
 
+    }
+}

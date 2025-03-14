@@ -93,7 +93,7 @@ include 'templates/navbar.php';
 
 
     </main>
-<?php
+    <?php
     include 'templates/footer.php';
 ?>
 

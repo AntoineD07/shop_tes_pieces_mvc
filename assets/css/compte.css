@@ -25,7 +25,7 @@ h3{
     font-size: 1.5rem;
     text-align: center;
     margin-top: 2rem;
-    background-color: #7b39eb;
+    background: linear-gradient(145deg,#9d70ebe8, #7b39eb, #9d70eb);
     color: #febc0c;
     margin: auto;
     padding:5px 15px ;
@@ -37,7 +37,7 @@ h3{
 .infos {
     box-shadow: 6px 5px 5px #131313;
     /* background: #D9D9D9; */
-    background: linear-gradient(145deg, #e6e6fa, #ffffff);
+    background: linear-gradient(145deg, #c2a8ef, #ad83f6, #d9d9d9);
     
 
     border-radius: 10px;
@@ -52,13 +52,13 @@ h3{
 
 .infos h5 {margin: auto;
     font-size: larger;
-    background-color: #7b39eb;
+    background-color: transparent;
     color: #febc0c;
     padding: 5px 15px;
     margin-top: 1rem;
     border-radius: 25px;
     justify-self: start; 
-    box-shadow: 2px 2px 2px #131313;
+    /* box-shadow: 2px 2px 2px #131313; */
 }
  input:focus, textarea:focus {
         outline: 2px solid #7b39eb; 

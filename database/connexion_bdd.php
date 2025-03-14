@@ -10,7 +10,7 @@ function connexionBdd() {
     try {
         $connexion = new PDO("mysql:host=$serveur;dbname=$bdd", $user, $pass);
         $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo '<p style="color:green ">connexion</p> '; 
+        // echo '<p style="color:green ">connexion</p> '; 
         return $connexion; 
     } catch (PDOException $e) {
         echo "erreur de co : " . $e->getMessage();
