@@ -24,6 +24,13 @@ class gestionUser {
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
+    public function isAdmin($userId) {
+        $stmt = $this->pdo->prepare("SELECT role FROM user_info WHERE ID_NAME = ?");
+        $stmt->execute([$userId]);
+        $user = $stmt->fetch();
+        return $user && $user['role'] === 'admin';
+    }
+
 
 
 

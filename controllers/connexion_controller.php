@@ -20,7 +20,13 @@
                 $_SESSION['user_id'] = $user['ID_NAME']; 
                 $_SESSION['user_email'] = $user['email'];
                 //redirige a mon_compte si co ok
-                header("Location: /mon_compte");
+                if ($user['role'] === 'admin') {
+                    $_SESSION['is_admin'] = true;
+                    header("Location: /admin_dash");
+                } else {
+                    $_SESSION['is_admin'] = false;
+                    header("Location: /mon_compte");
+                }
                 exit();
             } else {
                 //si mdp incorect message

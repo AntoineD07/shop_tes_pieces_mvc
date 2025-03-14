@@ -16,7 +16,8 @@
             <li>
                 <a href="/mon_compte">mon compte</a>
             </li>
-
+         
+     
             <li>
             <?php if (!isset($_SESSION['user_id'])): ?>
                 <a href="/connexion">connexion</a>
@@ -30,7 +31,11 @@
             <li>
                 <a href="/inscription">inscription</a>
             </li>
-        
+            <li>
+                <?php if (isset($_SESSION['user_id']) && isset($_SESSION['is_admin']) && $_SESSION['is_admin']): ?>
+                    <a href="/admin_dash">admin dash</a>
+                <?php endif; ?>
+            </li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
