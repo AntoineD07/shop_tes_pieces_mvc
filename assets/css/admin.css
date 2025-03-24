@@ -1,0 +1,94 @@
+body{
+    --s: 30px; /* control the size */
+
+    --c: #0000, #292d32 0.5deg 119.5deg, #0000 120deg;
+    --g1: conic-gradient(from 60deg at 56.25% calc(425% / 6), var(--c));
+    --g2: conic-gradient(from 180deg at 43.75% calc(425% / 6), var(--c));
+    --g3: conic-gradient(from -60deg at 50% calc(175% / 12), var(--c));
+    background: var(--g1), var(--g1) var(--s) calc(1.73 * var(--s)), var(--g2),
+      var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0,
+      var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
+    background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
+  overflow: visible;
+}
+.bonjour{
+  text-align: center;
+   margin: 1rem;
+    
+    font-size: 2rem;
+    color: #febc0c;
+}
+.new_piece{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(145deg,#9d70ebe8, #7b39eb, #9d70eb);
+    
+    padding: 0.5rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+    color: #febc0c;
+   
+}
+.new_piece h3{
+    text-align: center;
+    font-size: x-large;
+}
+.new_piece form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.new_piece form textarea, 
+.new_piece form input,
+.new_piece form select{
+    background: #f3e9e9;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    min-width: 100%;
+}
+.new_piece button{
+    width: 5rem;
+    align-self: center;
+    margin: 1rem;
+}
+.actions{
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    gap: 10px;
+
+}
+#edit{
+   
+    background-color: rgb(67, 121, 12);
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    padding: 2px;
+    border: #1e1e1e solid 1px;
+}
+#supp{
+    background-color: red;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    border: #1e1e1e solid 1px;
+}
+.table{
+    margin: auto;
+    background: linear-gradient(0deg,#ece2fce8, #bea0f2, #e7dafc);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 90%;
+}
+.nom{
+    width: 25%;
+}
+tbody,thead{
+
+  text-align: center;
+
+}

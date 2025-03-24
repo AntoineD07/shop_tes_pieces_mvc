@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier une pièce</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/edit.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
 </head>
 <body>
+    <?php
+        include 'templates/navbar.php';
+    ?>
     <h2>Modifier une pièce</h2>
     <form method="POST" action="/admin_dash">
         <input type="hidden" name="action" value="update">
@@ -22,7 +27,7 @@
         <input type="number" step="0.01" id="prix" name="prix" value="<?php echo htmlspecialchars($piece['prix']); ?>" required><br>
 
         <label for="caracteristique">Caractéristiques :</label>
-        <textarea id="caracteristique" name="caracteristique" required><?php echo htmlspecialchars($piece['carcteristique']); ?></textarea><br>
+        <textarea id="caracteristique" name="caracteristique" required><?php echo htmlspecialchars($piece['caracteristique']); ?></textarea><br>
 
         <label for="descriptif">Descriptif :</label>
         <textarea id="descriptif" name="descriptif" required><?php echo htmlspecialchars($piece['descriptif']); ?></textarea><br>
@@ -47,7 +52,7 @@
 
         <button type="submit">Mettre à jour</button>
     </form>
-
+<script src="/assets/js/script.js"></script>
     <a href="/admin_dash">Retour</a>
 </body>
 </html>

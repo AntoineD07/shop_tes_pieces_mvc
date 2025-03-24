@@ -19,6 +19,7 @@
                 //stock info user dans session
                 $_SESSION['user_id'] = $user['ID_NAME']; 
                 $_SESSION['user_email'] = $user['email'];
+                $_SESSION['firstname'] = $user['firstname'];
                 //redirige a mon_compte si co ok
                 if ($user['role'] === 'admin') {
                     $_SESSION['is_admin'] = true;

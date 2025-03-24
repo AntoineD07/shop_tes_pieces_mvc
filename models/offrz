@@ -1,0 +1,76 @@
+<?php
+require_once 'database/connexion_bdd.php';
+
+class FeaturedOfferModel {
+    private $connexion;
+
+    public function __construct($connexion) {
+        $this->connexion = $connexion;
+    }
+
+    // Ajouter une offre
+    public function addOffer($piece_id, $offer_type, $offer_message = null, $display_order = 0) {
+        if ($offer_type === 'special_offer') {
+            $this->removeSpecialOffer();
+        }
+
+        $stmt = $this->connexion->prepare("INSERT INTO featured_offers (piece_id, offer_type, offer_message, display_order) 
+                                           VALUES (?, ?, ?, ?)");
+        $stmt->execute([$piece_id, $offer_type, $offer_message, $display_order]);
+        return $this->connexion->lastInsertId();
+    }
+
+    // Supprimer une offre
+    public function removeOffer($piece_id, $offer_type) {
+        $stmt = $this->connexion->prepare("DELETE FROM featured_offers WHERE piece_id = ? AND offer_type = ?");
+        $stmt->execute([$piece_id, $offer_type]);
+    }
+
+    // Supprimer l'offre spéciale existante
+    public function removeSpecialOffer() {
+        $stmt = $this->connexion->prepare("DELETE FROM featured_offers WHERE offer_type = 'special_offer'");
+        $stmt->execute();
+    }
+
+    // Récupérer l'offre spéciale
+    public function getSpecialOffer() {
+        $stmt = $this->connexion->prepare("SELECT pieces.*, cars.cars_name, type_piece.nom_piece AS type_name, featured_offers.offer_message 
+                                           FROM featured_offers 
+                                           JOIN pieces ON featured_offers.piece_id = pieces.id_piece 
+                                           JOIN cars ON pieces.cars_id = cars.cars_id 
+                                           JOIN type_piece ON pieces.piece_id = type_piece.piece_id 
+                                           WHERE featured_offers.offer_type = 'special_offer' 
+                                           LIMIT 1");
+        $stmt->execute();
+        return $stmt->fetch();
+    }
+
+    // Récupérer les meilleures ventes
+    public function getBestSellers() {
+        $stmt = $this->connexion->prepare("SELECT pieces.*, cars.cars_name, type_piece.nom_piece AS type_name 
+                                           FROM featured_offers 
+                                           JOIN pieces ON featured_offers.piece_id = pieces.id_piece 
+                                           JOIN cars ON pieces.cars_id = cars.cars_id 
+                                           JOIN type_piece ON pieces.piece_id = type_piece.piece_id 
+                                           WHERE featured_offers.offer_type = 'best_seller' 
+                                           ORDER BY featured_offers.display_order ASC 
+                                           LIMIT 4");
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
+
+    // Vérifier si une pièce est une offre spéciale
+    public function isSpecialOffer($piece_id) {
+        $stmt = $this->connexion->prepare("SELECT * FROM featured_offers WHERE piece_id = ? AND offer_type = 'special_offer'");
+        $stmt->execute([$piece_id]);
+        return $stmt->fetch() !== false;
+    }
+
+    // Vérifier si une pièce est une meilleure vente
+    public function isBestSeller($piece_id) {
+        $stmt = $this->connexion->prepare("SELECT * FROM featured_offers WHERE piece_id = ? AND offer_type = 'best_seller'");
+        $stmt->execute([$piece_id]);
+        return $stmt->fetch() !== false;
+    }
+}
+?>
