@@ -1,33 +1,9 @@
-footer {
-    display: flex;
-    justify-content: space-between;
-  margin-top: 1rem;
+footer{
+  display: flex;
+  justify-content: space-around;
   background: linear-gradient(145deg,#9d70ebe8, #7b39eb, #9d70eb);
-    /* margin-top: 5%; */
-    color: #febc0c;
-  
-  }
-  
-  .copy {
-    margin: auto;
-    display: flex;
-    padding: 1rem;
-    font-size: smaller;
-    flex-direction: column;
-  }
-  
-  .contact {
-    display: flex;
-    padding: 1rem;
-    text-align: right;
-    font-size: smaller;
-  }
-  .copy a{
-    text-decoration: none;
-    color: red;
-    display: flex;
-    justify-content:center;
-    text-align: center;
-    
-  }
-  
+margin-top: 1rem;
+padding: 1rem;
+color: #febc0c;
+
+}

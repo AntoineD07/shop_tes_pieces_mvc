@@ -41,10 +41,6 @@ class createUser {
         $stmt->bindParam(':email', $email);
         $stmt->bindParam(':password', $password);
         return $stmt->execute();
-
-      
     }
-
-
 }
 ?>

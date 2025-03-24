@@ -4,6 +4,7 @@
 } 
 *{
   font-family: Copperplate-Gothic;
+  overflow-x: hidden;
 
   padding: 0;
   margin: 0;
@@ -132,30 +133,6 @@ nav div {
 
 
 
-footer {
-  /* position: absolute;bottom: 0;  */
-  width: 100%;
-  display: flex;
-  
-  justify-content: center;
-  background-color: #7b39eb;
-  color: #febc0c;
-  
-}
-
-.copy {
-  margin: auto;
-  display: flex;
-  padding: 1rem;
-  font-size: smaller;
-}
-
-.contact {
-  display: flex;
-  padding: 1rem;
-  text-align: right;
-  font-size: smaller;
-}
 @media screen and (min-width: 768px) {
   body{
     font-size: larger;
